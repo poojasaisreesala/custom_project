@@ -76,6 +76,10 @@ view: users {
   dimension: state {
     type: string
     sql: ${TABLE}.state ;;
+    link: {
+      label: "State"
+      url: "http://www.google.com/search?q={{ value }}"
+      }
   }
 
   dimension: zip {
